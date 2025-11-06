@@ -327,12 +327,12 @@
                 @endphp
                 
                 @if(!empty($serviceTypes))
-                    @foreach($serviceTypes as $index => $serviceType)
+                    @foreach($serviceTypes   as $index => $serviceType)
                         <tr>
                             <td>{{ $index + 1 }}</td>
                             <td>
                                 {{ ucwords($serviceType) }}
-                                <span class="tax-inclusive">Tax Inclusive</span>
+                                {{-- <span class="tax-inclusive"></span> --}}
                             </td>
                             <td class="text-right">
                                 @if($index === 0)

@@ -145,7 +145,3 @@ Route::prefix('owner')->name('owner.')->group(function () {
         // 🔹 Password Update
         Route::post('/password/update', [OwnerController::class, 'changePassword'])->name('password.update');
     });
-
-
-
-    // Admin routes

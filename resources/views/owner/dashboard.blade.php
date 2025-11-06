@@ -32,7 +32,7 @@
         </div>
         <div class="text-end">
             <small class="text-muted d-block">{{ now()->format('D, M j, Y') }}</small>
-            <small class="text-muted">{{ now()->format('g:i A') }}</small>
+            {{-- <small class="text-muted">{{ now()->timezone('Asia/Kolkata')format('g:i A') }}</small> --}}
         </div>
     </div>
 
@@ -141,7 +141,9 @@
                                 <td>
                                     {{ \Carbon\Carbon::parse($service->created_at)->format('d M Y') }}
                                     <br>
-                                    <small class="text-muted">{{ \Carbon\Carbon::parse($service->created_at)->format('g:i A') }}</small>
+                                    <small class="text-muted"> {{ \Carbon\Carbon::parse($service->service_start_datetime)
+                                                        ->timezone('Asia/Kolkata')
+                                                        ->format('H:i') }}</small> 
                                 </td>
                                 <td class="text-center">
                                     <div class="btn-group btn-group-sm" role="group">

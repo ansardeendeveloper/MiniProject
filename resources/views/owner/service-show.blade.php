@@ -59,10 +59,10 @@
                             <label class="form-label text-muted small mb-1">Service Date</label>
                             <p class="fw-semibold mb-0">{{ \Carbon\Carbon::parse($service->created_at)->format('d M Y, h:i A') }}</p>
                         </div>
-                        <div class="col-12">
+                        {{-- <div class="col-12">
                             <label class="form-label text-muted small mb-1">Description</label>
                             <p class="fw-semibold mb-0">{{ $service->description ?? 'No description provided' }}</p>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -89,7 +89,7 @@
                 </div>
             </div>
 
-            <!-- Service Center Information -->
+            {{-- <!-- Service Center Information -->
             <div class="card border-0 shadow-sm rounded-3">
                 <div class="card-header bg-success text-white">
                     <h6 class="mb-0"><i class="bi bi-building me-2"></i>Service Center</h6>
@@ -109,7 +109,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <!-- Service Timeline -->
     <div class="card border-0 shadow-sm rounded-3 mt-4">
